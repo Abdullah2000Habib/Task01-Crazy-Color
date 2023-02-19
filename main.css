@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: #4773a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    width: 100vw;
+    height: 90vh;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+.color-show{
+    flex:1;
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blanchedalmond;
+}
+.color-show span {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+
+}
+.color-config{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+.color-config .btn1 {
+    width: 90%;
+    padding: 20px 10px;
+    color: white;
+    background-color: #4773a8;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+.color-config .btn1:hover{
+    background-color: #426b9e;
+}
+.color-config .span1 ,.span2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+} 
+.color-config .input1 {
+    width: 90%;
+    font-size: 20px;
+    padding: 20px 10px;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+@media  (max-width: 1056px) {
+    main section{
+    height: 90%;
+    width: 90%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5px;
+}
+.color-show , .color-config{
+    width: 65%;
+    height: 40%;
+}
+
+
+}
+@media  (max-width: 500px) {
+    main section{
+    height: 80%;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5px;
+}
+
+.color-show , .color-config{
+    width: 80%;
+    height: 50%;
+}
+.color-config .span1 ,.span2  {
+    font-size: 15px;
+
+}
+.color-config .input1   {
+        font-size: 15px;
+        width: 100%;
+}   
+.color-config .btn1   {
+        font-size: 15px;
+        width: 100%;
+}   
+
+
+}
